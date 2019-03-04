@@ -1,24 +1,5 @@
-const { repair } = require('./items');
+const item = require('./items');
 
-it('repairs to full durability', () => {
-  const item = {
-    name: 'Lambda Shield',
-    type: "armor",
-    durability: 98,
-    displayName: '[+3] Lambda Shield',
-  };
-
-  // const expected = {
-  //   name: 'Lambda Shield',
-  //   type: "armor",
-  //   durability: 100,
-  //   displayName: '[+3] Lambda Shield',
-  // };
-
-  // expect(enhancer.repair(item)).toEqual(expected);
-
-
-  //OR
-
-  expect(repair(item).durability).toEqual(100)
+test('item should a name, a type, a vlue for the durability, and an enhancement value' () => {
+  const itemExample = new item
 })
